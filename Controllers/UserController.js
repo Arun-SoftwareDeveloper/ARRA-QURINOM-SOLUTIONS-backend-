@@ -97,12 +97,12 @@ async function forgotPassword(req, res) {
       subject: "Reset Your Comfort Path Password",
       html: `
     <h1>Hello ${user.firstName},</h1>
-    <p>We noticed that you requested to reset your password for Comfort Path.</p>
+    <p>We noticed that you requested to reset your password for ARRA.</p>
     <p>Don't worry! Click the link below to securely reset your password:</p>
      <p>Reset Token:${token}</p>
     <a href="https://main--prismatic-hamster-004de0.netlify.app/resetPassword" style="background-color: #ff8c00; color: #fff; padding: 10px 15px; text-decoration: none; border-radius: 5px; display: inline-block; font-weight: bold;">Reset Your Password</a>
     <p>If you did not request a password reset, please ignore this email.</p>
-    <p>Thank you for shopping with Comfort Path!</p>
+    <p>Thank you for shopping with ARRA!</p>
   `,
     };
 
