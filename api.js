@@ -8,6 +8,7 @@ const dbUrl =
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
+//mongodb connection
 mongoose
   .connect(dbUrl, {
     useNewUrlParser: true,
@@ -15,7 +16,6 @@ mongoose
   })
   .then(() => {
     console.log("Connected to MongoDB");
-    // Start your server or perform any other operations here
   })
   .catch((error) => {
     console.error("Error connecting to MongoDB:", error);
@@ -25,7 +25,7 @@ app.use(bodyParser.json());
 app.use("/", UserRoutes);
 
 app.get("/", (req, res) => {
-  res.send("Hello");
+  res.send("We Developed the Backend!!!");
 });
 
 const Port = 4000;

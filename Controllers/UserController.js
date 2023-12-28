@@ -3,7 +3,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const nodemailer = require("nodemailer");
 
-const secretKey = "arunramasamy46"; // Replace with your secret key
+const secretKey = "arunramasamy46";
 
 async function generateToken(user) {
   const payload = { userId: user._id };
@@ -100,7 +100,7 @@ async function forgotPassword(req, res) {
     <p>We noticed that you requested to reset your password for Comfort Path.</p>
     <p>Don't worry! Click the link below to securely reset your password:</p>
      <p>Reset Token:${token}</p>
-    <a href="https://poetic-kleicha-bb5e09.netlify.app/resetPassword" style="background-color: #ff8c00; color: #fff; padding: 10px 15px; text-decoration: none; border-radius: 5px; display: inline-block; font-weight: bold;">Reset Your Password</a>
+    <a href="https://main--prismatic-hamster-004de0.netlify.app/resetPassword" style="background-color: #ff8c00; color: #fff; padding: 10px 15px; text-decoration: none; border-radius: 5px; display: inline-block; font-weight: bold;">Reset Your Password</a>
     <p>If you did not request a password reset, please ignore this email.</p>
     <p>Thank you for shopping with Comfort Path!</p>
   `,
